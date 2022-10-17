@@ -59,27 +59,27 @@ function kiwiTokenGetterFactory(cognitoClientId, getTokenCallBack) {
     let refreshToken = getRefreshTokenFromUrl();
     let cognitoCallOptions = fetchOptions(cognitoClientId, refreshToken);
     let cognitoUrl = "https://cognito-idp.us-east-1.amazonaws.com/";
-    let accessToken = "";
-    return function getToken() {
+    let accessToken = refreshToken;
+//     return function getToken() {
         
-       if (isTokenValid(accessToken)) {
-           getTokenCallBack(accessToken);
-           return;
-       };
+//        if (isTokenValid(accessToken)) {
+//            getTokenCallBack(accessToken);
+//            return;
+//        };
         
-        fetch(cognitoUrl, cognitoCallOptions)
-        .then(onGetTokenSuccess, onGetTokenRejection)
-        .catch(onGetTokenError)
-        .then(data => {
-            if (!data) {
-                getTokenCallBack("");
-                return; 
-            }
-            accessToken = data.AuthenticationResult.AccessToken;
-            getTokenCallBack(accessToken);
-        } 
-        )
+//         fetch(cognitoUrl, cognitoCallOptions)
+//         .then(onGetTokenSuccess, onGetTokenRejection)
+//         .catch(onGetTokenError)
+//         .then(data => {
+//             if (!data) {
+//                 getTokenCallBack("");
+//                 return; 
+//             }
+//             accessToken = data.AuthenticationResult.AccessToken;
+//             getTokenCallBack(accessToken);
+//         } 
+//         )
         
-    }
+//     }
 
 }
