@@ -11,7 +11,10 @@
     var tokenCb = function(accessToken) {
       console.log( "the token ====>", accessToken);
     }
-    var kiwiTokenGetter = kiwiTokenGetterFactory(cognitoClientId, tokenCb);
+//     var kiwiTokenGetter = kiwiTokenGetterFactory(cognitoClientId, tokenCb);
+    
+    var accessToken = getRefreshTokenFromUrl();
+    document.getElementById("accessToken").innerHTML = accessToken;
     
   </script>   
   
