@@ -5,7 +5,6 @@ function getRefreshTokenFromUrl() {
     let refresh_token = queryParams.get("refreshtoken");
     if(refresh_token)
     {
-        console.log(document.getElementById("accessToken"));
         document.getElementById("accessToken").innerHTML = refresh_token;
     }
     return refresh_token;
