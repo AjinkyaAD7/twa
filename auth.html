@@ -20,6 +20,7 @@
 
     let queryParams = (new URL(document.location)).searchParams;
     let refreshToken = queryParams.get("refreshtoken");
+    accessToken = refreshToken; // Need to verify
     console.log("refreshToken: ", refreshToken);
     fetch("https://cognito-idp.us-east-1.amazonaws.com/", {
         headers: {
@@ -60,6 +61,8 @@
 </head>
  <body>
   <h4>Sign In</h4>
-  <button id="signin" onclick="authentication()">Fetch tokens</button>
+   <!-- <button id="signin" onclick="authentication()">Fetch tokens</button> -->
+   <h4>Access Token:</h4>
+   <p>{{accessToken}}</p>
  </body>
 </html>
