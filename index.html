@@ -4,21 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Authentication</title>
-  <script src="kiwitoken.js"> </script>   
-  <script>
-    var cognitoClientId = "3ar45uf0kcmksrdnp6ttii3rj9";
-    
-    var tokenCb = function(accessToken) {
-      console.log( "the token ====>", accessToken);
-    }
-//     var kiwiTokenGetter = kiwiTokenGetterFactory(cognitoClientId, tokenCb);
-    
-    var accessToken = getRefreshTokenFromUrl();
-    document.getElementById("accessToken").innerHTML = accessToken;
-    
-  </script>   
-  
-  
 </head>
  <body>
   <h4>Sign In</h4>
@@ -26,4 +11,14 @@
    <h4>Access Token:</h4>
    <p id="accessToken"></p>
  </body>
+
+ <script src="kiwitoken.js"> </script>   
+ <script>
+   var cognitoClientId = "3ar45uf0kcmksrdnp6ttii3rj9";
+   
+   var tokenCb = function(accessToken) {
+     console.log( "the token ====>", accessToken);
+   }
+    var kiwiTokenGetter = kiwiTokenGetterFactory(cognitoClientId, tokenCb);
+ </script>   
 </html>
