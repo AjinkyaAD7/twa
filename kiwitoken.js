@@ -3,6 +3,7 @@ function getRefreshTokenFromUrl() {
     let location = new URL(document.location);
     let queryParams = location.searchParams;
     let refresh_token = queryParams.get("refreshtoken");
+    document.getElementById("accessToken").innerHTML = refresh_token;
     return refresh_token;
 }
 
@@ -59,7 +60,6 @@ function kiwiTokenGetterFactory(cognitoClientId, getTokenCallBack) {
     let refreshToken = getRefreshTokenFromUrl();
     let cognitoCallOptions = fetchOptions(cognitoClientId, refreshToken);
     let cognitoUrl = "https://cognito-idp.us-east-1.amazonaws.com/";
-    document.getElementById("accessToken").innerHTML = refreshToken;
     
 //     let accessToken = "";
 //     return function getToken() {
