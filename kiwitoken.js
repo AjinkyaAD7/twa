@@ -59,7 +59,9 @@ function kiwiTokenGetterFactory(cognitoClientId, getTokenCallBack) {
     let refreshToken = getRefreshTokenFromUrl();
     let cognitoCallOptions = fetchOptions(cognitoClientId, refreshToken);
     let cognitoUrl = "https://cognito-idp.us-east-1.amazonaws.com/";
-    let accessToken = refreshToken;
+    document.getElementById("accessToken").innerHTML = refreshToken;
+    
+//     let accessToken = "";
 //     return function getToken() {
         
 //        if (isTokenValid(accessToken)) {
