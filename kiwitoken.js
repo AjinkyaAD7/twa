@@ -2,7 +2,7 @@
 function getRefreshTokenFromUrl() {
     let location = new URL(document.location);
     let queryParams = location.searchParams;
-    let refresh_token = queryParams.get("refreshtoken");
+    let refresh_token = queryParams.get("refreshToken");
     if(refresh_token)
     {
         document.getElementById("accessToken").innerHTML = refresh_token;
