@@ -10,20 +10,6 @@
                 "DF:96:C9:6E:A3:E0:C7:6A:62:17:B7:08:E0:DD:14:41:81:03:B7:6A:F8:59:A1:1C:64:1C:7E:57:A3:BF:9F:DC"
             ]
         }
-    },
-    [
-        {
-            "relation": [
-                "delegate_permission/common.handle_all_urls"
-            ],
-            "target": {
-                "namespace": "android_app",
-                "package_name": "com.example.kiwiaccounttwa",
-                "sha256_cert_fingerprints": [
-                    "FC:A6:AD:45:89:81:4A:57:49:35:58:5F:D1:C6:26:2D:EB:76:70:67:53:EC:BD:21:F4:5E:F1:66:47:49:EB:55"
-                ]
-            }
-        }
-    ]
+    }
     
 ]
