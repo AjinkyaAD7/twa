@@ -1,15 +1,9 @@
-[
-    {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "com.example.kiwiaccounttwa",
-            "sha256_cert_fingerprints": [
-                "DF:96:C9:6E:A3:E0:C7:6A:62:17:B7:08:E0:DD:14:41:81:03:B7:6A:F8:59:A1:1C:64:1C:7E:57:A3:BF:9F:DC"
-            ]
-        }
-    }
-    
-]
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.kiwiaccounttwa",
+    "sha256_cert_fingerprints":
+    ["96:89:BC:79:88:AB:1B:0F:9D:4A:CD:83:75:24:46:91:14:3A:5E:4A:82:0A:92:81:67:31:CE:47:AE:95:5B:C5"]
+  }
+}]
