@@ -1,1 +1,6 @@
 
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.kiwi.twa",
+               "sha256_cert_fingerprints": ["A7:67:68:D3:3E:72:41:A8:54:87:45:7C:E5:92:2A:95:A7:B6:87:62:A1:F4:8D:73:69:77:CF:31:F3:37:00:48"] }
+}]
