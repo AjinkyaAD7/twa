@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.example.kiwiaccounttwa",
-    "sha256_cert_fingerprints":
-    ["96:89:BC:79:88:AB:1B:0F:9D:4A:CD:83:75:24:46:91:14:3A:5E:4A:82:0A:92:81:67:31:CE:47:AE:95:5B:C5"]
-  }
-}]
